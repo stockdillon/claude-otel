@@ -24,7 +24,8 @@ def main():
     attributes = [
         attr("event.name", "claude_code.pre_tool_use"),
         attr("tool_name", event.get("tool_name", "")),
-        attr("session_id", event.get("session_id", "")),
+        attr("session.id", event.get("session_id", "")),
+        attr("tool_use_id", event.get("tool_use_id", "")),
         *(attr(k, v) for k, v in CUSTOM_METADATA.items()),
     ]
 

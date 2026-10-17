@@ -11,6 +11,8 @@ All telemetry exported to New Relic is reported under the service name:
 claude-otel-collector-demo
 ```
 
+https://onenr.io/0qwLPyP2bw5
+
 This name is enforced by the `resource` processor in
 `otel-collector-config.yaml`, which overwrites the `service.name` resource
 attribute on every signal with the value of the `OTEL_SERVICE_NAME` env var
